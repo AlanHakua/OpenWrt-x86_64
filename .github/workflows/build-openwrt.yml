@@ -67,7 +67,7 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Enable SSR Plus
-      run: cd openwrt && sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.config.default
+      run: cd openwrt && sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
 
     - name: Load custom feeds
       run: |
